@@ -103,3 +103,11 @@ git reset --hard<commit_id> 恢复到该版本
 Git本质是跟踪修改而非文件本身
 git checkout -- file 撤销修改
 git rm 删除文件
+
+5.远程仓库
+a.创建SSH Key ssh-keygen -t rsa -C "youremail@example.com"
+生成id_rsa和id_rsa.pub这两个文件
+
+b.登录GitHub setting 添加SSH Keys
+在Key文本框里粘贴id_rsa.pub文件的内容
+为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
