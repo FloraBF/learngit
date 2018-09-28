@@ -1,0 +1,8 @@
+2018.09.28
+git init 把当前目标编程Git可以管理的仓库
+git add 把文件添加到版本库(Windows 务必使用Notepad UTF-8 without BOM)
+git commit -m "xxxxxx" -m表示本次提交说明务必要有意义
+[master (root-commit) eaadf4e] wrote a readme file ——提交说明
+ 1 file changed, 2 insertions(+)	1个文件被改动 插入两行内容
+ create mode 100644 readme.txt
+git add 与git commit结合使用
