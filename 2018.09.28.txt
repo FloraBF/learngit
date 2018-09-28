@@ -90,5 +90,16 @@ git checkout -- file 直接丢弃工作区的修改
 修了工作区内容并提交到缓存区那么先reset HEAD <file>再进行上一步
 
 4.5 删除文件
-git rm
+git rm 从版本库中删除文件
 提交到版本库之后 可以通过git checkout -- file 找回
+
+                                      Today summary
+git init 初始化工作区域并创建Git版本库
+git add 提交文件到Git版本库的stage缓存区域
+git commit -m 提交文件到分支区域
+git log查看提交历史
+git reflog查看命令历史
+git reset --hard<commit_id> 恢复到该版本
+Git本质是跟踪修改而非文件本身
+git checkout -- file 撤销修改
+git rm 删除文件
