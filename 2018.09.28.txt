@@ -1,7 +1,7 @@
 2018.09.28
 1.Git简介
-1.1安装Git
-1.2创建版本库
+2.安装Git
+3.创建版本库
 git init 把当前目标编程Git可以管理的仓库
 git add 把文件添加到版本库(Windows 务必使用Notepad UTF-8 without BOM)
 git commit -m "xxxxxx" -m表示本次提交说明务必要有意义
@@ -10,7 +10,7 @@ git commit -m "xxxxxx" -m表示本次提交说明务必要有意义
  create mode 100644 readme.txt
 git add 与git commit结合使用
 
-2.时光穿梭机
+4.时光穿梭机
 git status 查看当前状态
 On branch master
 Changes not staged for commit:
@@ -54,14 +54,14 @@ index 5db6954..ae34ca9 100644
 +git diff <B2>?<D0>?<C4><C4><DA><C8><DD>
 \ No newline at end of file
 当前修改版本与前一个版本的差别(目前不支持中文显示)
-2.1 版本退回
+4.1 版本退回
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
 
 穿梭前，用git log可以查看提交历史，以便确定要回退到哪个版本。（git log --pretty=oneline）
 
 要重返未来，用git reflog查看命令历史，以便确定要回到未来的哪个版本。
 
-2.2 工作区和暂存区
+4.2 工作区和暂存区
 能看到的目录(learngit)即为一个工作区
 版本库(Repository)即.git
 版本库包括了stage的暂存区以及Git自动创建的master分支，指向master的Head指针
@@ -69,9 +69,8 @@ git add 实际上把file添加到stage暂存区
 git commit 实际上把stage的所有内容提交到当前分支
 也就是说 不用添加一个文件就提交一次，可以多次添加修改文件之后再提交
 
-2.3 管理修改
+4.3 管理修改
 Git本质是跟踪修改(增删查改均为修改)而非文件本身
-实验 
 git add 2018.09.28.txt
 git commit -m 
 git status
@@ -86,10 +85,10 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 第2次修改 并没有提交成功，也就是说Git版本库只保留了commit之后的修改，commit之前的修改都没提交到版本库，继续提交到版本库的话需要再次add与commit
 
-2.4 撤销修改
+4.4 撤销修改
 git checkout -- file 直接丢弃工作区的修改
 修了工作区内容并提交到缓存区那么先reset HEAD <file>再进行上一步
 
-2.5 删除文件
+4.5 删除文件
 git rm
 提交到版本库之后 可以通过git checkout -- file 找回
