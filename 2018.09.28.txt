@@ -73,3 +73,16 @@ git commit 实际上把stage的所有内容提交到当前分支
 Git本质是跟踪修改(增删查改均为修改)而非文件本身
 实验 
 git add 2018.09.28.txt
+git commit -m 
+git status
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   2018.09.28.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+第2次修改 并没有提交成功，也就是说Git版本库只保留了commit之后的修改，commit之前的修改都没提交到版本库，继续提交到版本库的话需要再次add与commit
+
