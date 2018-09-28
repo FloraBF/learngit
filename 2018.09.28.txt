@@ -86,3 +86,10 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 第2次修改 并没有提交成功，也就是说Git版本库只保留了commit之后的修改，commit之前的修改都没提交到版本库，继续提交到版本库的话需要再次add与commit
 
+2.4 撤销修改
+git checkout -- file 直接丢弃工作区的修改
+修了工作区内容并提交到缓存区那么先reset HEAD <file>再进行上一步
+
+2.5 删除文件
+git rm
+提交到版本库之后 可以通过git checkout -- file 找回
