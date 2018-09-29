@@ -3,3 +3,22 @@ ssh协议克隆最快
 git clone git@github.com:FloraBF/gitakilla.git
 https协议克速度隆一般
 git clone https://github.com/FloraBF/gitakilla.git
+
+6 分支管理
+分支便于分工合作互不影响工作
+Git分支创建切换与删除速度快
+
+6.1 创建与合并分支
+Git把提交串成一条线
+master 主分支
+HEAD指向当前分支
+
+创建并切换到dev分支 git checkout -b dev
+相当于
+git branch dev 
+git checkout dev
+查看当前分支并列出所有分支 git branch *表示当前分支
+
+
+
+
