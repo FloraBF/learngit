@@ -35,3 +35,8 @@ git merge dev 将dev与master合并
 删除分支：git branch -d <name>
 
 6.2 解决冲突
+原因在于两个分支提交的文件不一致，存在冲突
+Auto-merging readme.txt
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+手动解决冲突之后再合并
