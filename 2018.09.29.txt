@@ -1,0 +1,5 @@
+5.2 从远程库克隆
+ssh协议克隆最快
+git clone git@github.com:FloraBF/gitakilla.git
+https协议克速度隆一般
+git clone https://github.com/FloraBF/gitakilla.git

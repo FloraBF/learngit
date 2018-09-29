@@ -111,3 +111,6 @@ a.创建SSH Key ssh-keygen -t rsa -C "youremail@example.com"
 b.登录GitHub setting 添加SSH Keys
 在Key文本框里粘贴id_rsa.pub文件的内容
 为什么GitHub需要SSH Key呢？因为GitHub需要识别出你推送的提交确实是你推送的，而不是别人冒充的，而Git支持SSH协议，所以，GitHub只要知道了你的公钥，就可以确认只有你自己才能推送。
+
+5.1 添加远程库
+登录Github create a new repo
