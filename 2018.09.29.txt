@@ -67,4 +67,4 @@ $ git log --graph --pretty=oneline --abbrev-commit
 * 297c896 add git learning record 01
 * fc51811 wrote a readme file
 
-6.3
+6.3 分支管理策略
