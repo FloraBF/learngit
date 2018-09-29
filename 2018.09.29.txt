@@ -18,7 +18,20 @@ HEAD指向当前分支
 git branch dev 
 git checkout dev
 查看当前分支并列出所有分支 git branch *表示当前分支
+git branch -d dev 删除dev分支
+git branch 查看分支
+git merge dev 将dev与master合并
 
+查看分支：git branch
 
+创建分支：git branch <name>
 
+切换分支：git checkout <name>
 
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+6.2 解决冲突
