@@ -68,3 +68,38 @@ $ git log --graph --pretty=oneline --abbrev-commit
 * fc51811 wrote a readme file
 
 6.3 分支管理策略
+合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并
+$ git merge --no-ff -m "merge with no-ff" dev
+Merge made by the 'recursive' strategy.
+ 2018.09.29.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+*   a713986 merge with no-ff
+|\
+| * 61ddeaa add merge
+|/
+* f498656 29-03
+*   a6efc15 conflict fixed
+|\
+| * e02672a Add simple
+* | ec89adf % simple
+|/
+* 2c29220 29 03
+* 442b704 branch test
+* 863bc89 learning git 29-02
+* 2ccef80 2018.09.29 01
+* e8468e1 learn git 06
+* 05d164c Today Summary
+* 9731794 learn git 1-4
+* 2dd5ffc learn git 05
+* ee2303f add test.txt
+* 4e81a20 learngit 04
+* a10036b understand the trackers
+* b7bdb1f understand how stage works
+* f6768f5 git learning 03
+* 54f2f72 append GPL
+* f332b6c git learning 02
+* 93c892b Nothing
+* 36ac198 add distributed
+* 297c896 add git learning record 01
+* fc51811 wrote a readme file
