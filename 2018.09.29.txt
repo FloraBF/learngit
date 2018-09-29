@@ -40,3 +40,31 @@ Auto-merging readme.txt
 CONFLICT (content): Merge conflict in readme.txt
 Automatic merge failed; fix conflicts and then commit the result.
 手动解决冲突之后再合并
+
+$ git log --graph --pretty=oneline --abbrev-commit
+*   a6efc15 conflict fixed
+|\
+| * e02672a Add simple
+* | ec89adf % simple
+|/
+* 2c29220 29 03
+* 442b704 branch test
+* 863bc89 learning git 29-02
+* 2ccef80 2018.09.29 01
+* e8468e1 learn git 06
+* 05d164c Today Summary
+* 9731794 learn git 1-4
+* 2dd5ffc learn git 05
+* ee2303f add test.txt
+* 4e81a20 learngit 04
+* a10036b understand the trackers
+* b7bdb1f understand how stage works
+* f6768f5 git learning 03
+* 54f2f72 append GPL
+* f332b6c git learning 02
+* 93c892b Nothing
+* 36ac198 add distributed
+* 297c896 add git learning record 01
+* fc51811 wrote a readme file
+
+6.3
